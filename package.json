@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SacredData/generateSidecar#readme",
   "dependencies": {
-    "baptism": "0.0.6"
+    "baptism": "0.0.6",
+    "nanoprocess": "^0.8.5"
   }
 }
