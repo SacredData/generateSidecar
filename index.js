@@ -24,18 +24,6 @@ function main(cb) {
     })
     console.log(tracks)
 
-    /*
-    let start = 0.0;
-
-    tracks.forEach(track => {
-      track.start = start
-      start += track.duration
-      track.end = start
-    })
-
-    console.log(tracks)
-    */
-
     cb(JSON.stringify({
       regions: tracks
     }))
