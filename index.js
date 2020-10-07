@@ -1,11 +1,11 @@
 const { Album } = require('baptism')
+const concat = require('./concat')
+const fpcalc = require('fpcalc')
 const fs = require('fs')
 const path = require('path')
+const waveform = require('./waveform')
 
-
-
-
-function main(cb) {
+function regions(cb) {
   const album = new Album('./test/2')
   album.probe((err, res) => {
     console.log(err, res)
@@ -30,7 +30,7 @@ function main(cb) {
   })
 }
 
-main((cb) => {
+regions((cb) => {
   console.log('done', cb)
   fs.writeFileSync('./sidecar_SMXXX.json', cb)
 })
